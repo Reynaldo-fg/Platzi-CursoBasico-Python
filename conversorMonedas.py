@@ -1,3 +1,9 @@
+def conversor(valor_dolar):
+    dolares = moneda / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes  $" + dolares + " dolares.")
+
 menu = """Bienvenido al conversor de monedas 💰
 
 Para Sol peruano eliga la opcion [1]
@@ -10,12 +16,6 @@ Para boliviar venezolano eliga la opcion [6]
 Escoge una opcion: """
 
 opcion = int(input(menu))
-
-def conversor(valor_dolar):
-    dolares = moneda / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes  $" + dolares + " dolares.")
 
 if opcion == 1:
     moneda = float(input("Cuantos soles peruanos tienes?: "))
