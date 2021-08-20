@@ -11,54 +11,32 @@ Escoge una opcion: """
 
 opcion = int(input(menu))
 
+def conversor(valor_dolar):
+    dolares = moneda / valor_dolar
+    dolares = round(dolares, 2)
+    dolares = str(dolares)
+    print("Tienes  $" + dolares + " dolares.")
+
 if opcion == 1:
-    soles =  input("Cuantos soles peruanos tienes?: ")
-    soles = float(soles)
-    valor_dolar = 4.094
-    dolares = soles / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes  $" + dolares + " dolares.")
+    moneda = float(input("Cuantos soles peruanos tienes?: "))
+    conversor(4.094)
+   
 elif opcion == 2:
-    pesos =  input("Cuantos pesos colombianos tienes?: ")
-    pesos = float(pesos)
-    valor_dolar = 3866.4
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes  $" + dolares + " dolares.")
+    moneda =  float(input("Cuantos pesos colombianos tienes?: "))
+    conversor(3866.4)
 elif opcion == 3:
-    pesos =  input("Cuantos pesos chilenos tienes?: ")
-    pesos = float(pesos)
-    valor_dolar = 786.51
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes  $" + dolares + " dolares.")
+    moneda = float(input("Cuantos pesos chilenos tienes?: "))
+    conversor(786.51)
 elif opcion == 4:
-    bolivianos =  input("Cuantos bolivares bolivianos tienes?: ")
-    bolivianos = float(bolivianos)
-    valor_dolar = 6.84
-    dolares = bolivianos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes  $" + dolares + " dolares.")
+    moneda =  float(input("Cuantos bolivares bolivianos tienes?: "))
+    conversor(6.84)
+
 elif opcion == 5:
-    pesos =  input("Cuantos pesos argentinos tienes?: ")
-    pesos = float(pesos)
-    valor_dolar = 97.28
-    dolares = pesos / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes  $" + dolares + " dolares.")
+    moneda =  float(input("Cuantos pesos argentinos tienes?: "))
+    conversor(97.28)
 elif opcion == 6:
-    bolivares =  input("Cuantos bolivares venezolanos tienes?: ")
-    bolivares = float(bolivares)
-    valor_dolar = 4031330.00
-    dolares = bolivares / valor_dolar
-    dolares = round(dolares, 2)
-    dolares = str(dolares)
-    print("Tienes  $" + dolares + " dolares.")
+    moneda =  float(input("Cuantos bolivares venezolanos tienes?: "))
+    conversor(4031330.00)
 else:
     print("Elige una de las opciones mencionadas")
 
