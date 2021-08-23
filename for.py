@@ -1,0 +1,18 @@
+# for i in range(13):
+#     print('2 * '+  + '=  '+ 11*i)
+
+# contador = 1
+# print(contador)
+# while contador < 1000:
+#     contador += 1
+#     print(contador)
+
+# a = list(range(1000))
+# print(a)
+
+# for contador in range(1,1000):
+#     print(contador)
+
+
+for i in range(13):
+    print(11*i)
